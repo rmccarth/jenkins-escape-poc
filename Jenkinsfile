@@ -1,7 +1,7 @@
 pipeline {
     agent {
       docker {
-        image 'curl:7.72.0'
+        image 'curlimages/curl:7.72.0'
         args '-u root:sudo -v /var/run/docker.sock:/var/run/docker.sock'
         }
       }
